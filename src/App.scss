@@ -1,0 +1,134 @@
+.header-bg {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.banner-bg {
+  background-image: url("./assets/background/banner-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg {
+  background-image: url("./assets/background/service-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-bg {
+  background-image: url("./assets/background/about-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.team-bg {
+  background-image: url("./assets/background/team-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tokenomics-bg {
+  background-image: url("./assets/background/tokenomics-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.roadmap-bg {
+  background-image: url("./assets/background/roadmap-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  .roadmap-section {
+    background-image: url("./assets/images/roadmap.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .roadmap-title-bg {
+    background-image: url("./assets/images/roadmap_title.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .mini-roadmap-section {
+    @media (min-width: 976px) {
+      background-image: url("./assets/images/roadmap.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    background-image: url("./assets/images/mini_roadmap.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.partners-bg {
+  background-image: url("./assets/background/partners-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  @media (max-width: 768px) {
+    background-image: url("./assets/background/partners-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .partners-circle {
+    background-image: url("./assets/images/partners_circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.faq-bg {
+  background-image: url("./assets/background/faq-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .faqitem-bg {
+    background: linear-gradient(270deg, #2EBD85 0%, #1CB2E5 100%);
+  }
+  .openitem-bg {
+    background: linear-gradient(0deg, #EDEDED 0%, #FFFFFF 100%);
+    box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.19);
+    mix-blend-mode: normal;
+  }
+  .input-faq {
+    background: linear-gradient(270.16deg, #1F2630 -0.23%, #2E3641 48.46%, #3E4754 99.8%);
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    border-radius: 10px;
+    border-color: #1CB2E5;
+    border-width: 2px;
+  }
+  .subscribe-btn {
+    background: linear-gradient(270deg, #2EBD85 0%, #1CB2E5 100%);
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    border-radius: 10px;
+    border-color: #1CB2E5;
+    border-width: 1px;
+  }
+}
+
+.footer-bg {
+  background-image: url("./assets/background/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
