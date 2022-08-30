@@ -62,10 +62,10 @@ function Header() {
                   <div className="absolute flex flex-row-reverse justify-end bg-white w-32 mt-1">
                     <ul>
                       <li>
-                        <a href="https://docsend.com/view/p26a9bvfpqf52ddi" className="block py-2 px-2 hover:text-app-green">White Paper</a>
+                        <a href="https://docsend.com/view/p26a9bvfpqf52ddi" target="_blank" className="block py-2 px-2 hover:text-app-green">White Paper</a>
                       </li>
                       <li>
-                        <a href="https://docsend.com/view/q83qhhu6h66ckvgk" className="block py-2 px-2 hover:text-app-green">Check Deck</a>
+                        <a href="https://docsend.com/view/q83qhhu6h66ckvgk" target="_blank" className="block py-2 px-2 hover:text-app-green">Check Deck</a>
                       </li>
                     </ul>
                   </div>

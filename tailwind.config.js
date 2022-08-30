@@ -86,7 +86,8 @@ module.exports = {
             DEFAULT: '#0d91a9'
           },
           blue: {
-            DEFAULT: '#89E1FF'
+            DEFAULT: '#89E1FF',
+            500: '#0095C8',
           },
           green: {
             DEFAULT: '#2EBD85',

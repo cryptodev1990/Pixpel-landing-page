@@ -20,6 +20,11 @@ function Banner() {
               In Pixpel, game developers and players have a place to connect, invest, and play.<br/>
               If you want to know more about us, please check out our deck.
             </div>
+            <a href="https://docsend.com/view/q83qhhu6h66ckvgk" className="flex flex-col bg-app-blue-500 py-2 px-4 rounded-full w-36 h-12 mt-8">
+              <div className="items-center my-auto mx-auto">
+                Check Deck
+              </div>
+            </a>
           </div>
           <div className="lg:w-1/2 w-full">
             <img src={Hero} className="w-3/4 mx-auto" alt="hero" />
