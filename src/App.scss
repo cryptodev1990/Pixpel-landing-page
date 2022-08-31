@@ -126,6 +126,46 @@
   }
 }
 
+.contact-bg {
+  background-image: url("./assets/background/contact-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  input {
+    border: 0px;
+    color: var(--white);
+    background: none;
+    height: 1.4375em;
+    outline: none;
+    width: 100%;
+  }
+  textarea {
+    border: 0px;
+    color: var(--white);
+    background: none;
+    outline: none;
+    width: 100%;
+    &::-webkit-scrollbar {
+      width: 5px;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px #89E1FF;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #0095C8;
+    }
+  }
+  .subscribe-btn {
+    background: linear-gradient(270deg, #2EBD85 0%, #1CB2E5 100%);
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    border-radius: 10px;
+    border-color: #1CB2E5;
+    border-width: 1px;
+  }
+}
+
 .footer-bg {
   background-image: url("./assets/background/footer-background.png");
   background-repeat: no-repeat;

@@ -30,6 +30,7 @@ module.exports = {
       '3xl': ['50px', '75px'],
       '4xl': ['60px', '90px'],
       '5xl': ['55px', '82px'],
+      '6xl': ['55px', '75px'],
       'self-xl': ['39px', '58px'],
     },
     backgroundColor: theme => ({
