@@ -1,6 +1,5 @@
 import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
 import { useAppContext } from "../../../context/AppContext";
 import { faqList } from "./faqlist";
 import "../../../App.scss";
@@ -9,46 +8,58 @@ import ContactNFT from "../../../assets/images/contact-image.png";
 declare type FapProps = {
   question: string;
   answer: string;
+  id: number;
+  handleFaqClicked: any;
 }
 
 const FaqItem = (props: FapProps) => {
-  const [collapsed, setCollapsed] = useState(true)
+  const context = useAppContext();
+
   return (
     <div className="flex flex-row text-white">
       <div
         className="flex flex-col p-2 py-4 cursor-pointer w-full"
-        onClick={() => {
-          setCollapsed(!collapsed)
-        }}
+        onClick={() => { props.handleFaqClicked(props.id) }}
       >
         <div className="flex justify-between items-center text-base2 font-semibold py-2 rounded-lg border-app-blue faqitem-bg px-2">
           {props.question}
           <FontAwesomeIcon
-            icon={collapsed ? faAngleRight : faAngleDown}
+            icon={context.faqStatus[props.id] ? faAngleRight : faAngleDown}
             className="mx-2"
           />
         </div>
-        {!collapsed && (
+        {context.faqStatus[props.id] && (
           <>
-            <div className="mt-2 text-black flex openitem-bg text-base font-light py-2 px-2 rounded-lg">
+            <div className={`show mt-2 text-black flex openitem-bg text-base font-light py-2 px-2 rounded-lg`}>
               {props.answer}
             </div>
           </>
         )}
       </div>
     </div>
-  )
+  );
 }
 
 function Faq() {
   const context = useAppContext();
+
+  const handleFaqClicked = (id: number) => {
+    let _faqStatus: boolean[] = [false, false, false, false];
+    for(let i = 0; i < context.faqStatus.length; i++) {
+      if(id === i) {
+        _faqStatus[i] = !context.faqStatus[i];
+      }
+    }
+
+    context.setFaqStatus(_faqStatus);
+  }
   return (
     <>
       {
         context.clickedContact ?
         (
           <div className="contact-bg min-h-screen">
-            <div className="flex flex-col-reverse md:flex-row mx-auto w-full gap-8 py-28 px-4 md:px-8 lg:px-12 xl:px-24 2xl:px-36 3xl:px-48">
+            <div className="show flex flex-col-reverse md:flex-row mx-auto w-full gap-8 py-28 px-4 md:px-8 lg:px-12 xl:px-24 2xl:px-36 3xl:px-48">
               <div className="w-full md:w-2/5">
                 <div className="flex flex-col gap-8 mx-auto my-auto">
                   <div className="text-white text-6xl font-semibold">
@@ -85,7 +96,7 @@ function Faq() {
                   {
                     faqList.map((dt, idx) => {
                       return(
-                        <FaqItem {...dt} key={idx} />
+                        <FaqItem {...dt} key={idx} id={idx} handleFaqClicked={handleFaqClicked} />
                       )
                     })
                   }

@@ -1,6 +1,5 @@
 import React from "react";
 import "../../../App.scss";
-import Road from "../../../assets/images/roadmap_road.png";
 
 function Roadmap() {
   return (

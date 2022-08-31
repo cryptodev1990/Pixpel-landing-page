@@ -22,11 +22,11 @@ function Footer() {
             <img src={LinkedIn} alt="linkedin" className="lg:w-9 md:w-7 sm:w-6 w-5" />
             <img src={Medium} alt="medium" className="lg:w-9 md:w-7 sm:w-6 w-5" />
           </div>
-          <div className="flex flex-col items-center justify-center gap-8 text-base font-medium">
+          <div className="mt-48 lg:mt-36 xl:mt-28 2xl:mt-20 3xl:mt-16 flex flex-col items-center justify-center gap-8 text-base font-medium">
             <div>
               info@pixpel.io
             </div>
-            <div>
+            <div className="flex items-center justify-center">
               © Copyright 2022 by Pixpel Trading S.A. de C.V.
             </div>
             <div>
