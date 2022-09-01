@@ -15,12 +15,24 @@ function Footer() {
         <div className="flex flex-col gap-12 items-center px-4 md:px-8 lg:px-12 xl:px-24 2xl:px-36 3xl:px-48 text-white">
           <img src={Pixpel} alt="footer_pixpel" className="sm:w-full lg:w-3/4 xl:w-3/5 2xl:w-1/2" />
           <div className="flex items-center justify-center gap-2 lg:gap-8 md:gap-4 w-full">
-            <img src={Book} alt="book" className="lg:w-9 md:w-7 sm:w-6 w-5"/>
-            <img src={Twitter} alt="twitter" className="lg:w-9 md:w-7 sm:w-6 w-5" />
-            <img src={Telegram} alt="telegram" className="lg:w-9 md:w-7 sm:w-6 w-5" />
-            <img src={Discord} alt="discord" className="lg:w-9 md:w-7 sm:w-6 w-5" />
-            <img src={LinkedIn} alt="linkedin" className="lg:w-9 md:w-7 sm:w-6 w-5" />
-            <img src={Medium} alt="medium" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            <a href="https://www.facebook.com/Pixpel-100577316004386" rel="noreferrer" target="_blank">
+              <img src={Book} alt="book" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            </a>
+            <a href="https://twitter.com/PixpelPlatform?t=aBKBqFiERPwY7mZW2ZtAPg&s=09" rel="noreferrer" target="_blank">
+              <img src={Twitter} alt="twitter" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            </a>
+            <a href="https://t.me/+ydBelVn71LlkNzRk" rel="noreferrer" target="_blank">
+              <img src={Telegram} alt="telegram" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            </a>
+            <a href="https://discord.gg/JUPxf3HFrN" rel="noreferrer" target="_blank">
+              <img src={Discord} alt="discord" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            </a>
+            <a>
+              <img src={LinkedIn} alt="linkedin" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            </a>
+            <a>
+              <img src={Medium} alt="medium" className="lg:w-9 md:w-7 sm:w-6 w-5" />
+            </a>
           </div>
           <div className="mt-48 lg:mt-36 xl:mt-28 2xl:mt-20 3xl:mt-16 flex flex-col items-center justify-center gap-8 text-base font-medium">
             <div>

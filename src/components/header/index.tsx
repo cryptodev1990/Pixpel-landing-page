@@ -7,7 +7,7 @@ function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <header className="flex absolute w-full justify-between items-center h-24 header-bg top-0 px-8 md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48">
+      <header className="flex absolute w-full justify-between items-center h-24 header-bg top-0 px-8 md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48 z-20">
         <a href="/">
           <img src={Logo} alt="logo" className="w-40"/>
         </a>
@@ -45,6 +45,11 @@ function Header() {
           <div className="items-center text-white cursor-pointer hover:text-app-green" onClick={() => setNavbarOpen(false) }>
             <a href="#partners">
               Partners
+            </a>
+          </div>
+          <div className="items-center text-white cursor-pointer hover:text-app-green" onClick={() => setNavbarOpen(false) }>
+            <a href="#faq">
+              FAQ
             </a>
           </div>
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">
