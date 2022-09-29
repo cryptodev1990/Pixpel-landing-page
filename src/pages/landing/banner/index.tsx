@@ -12,7 +12,7 @@ function Banner() {
               Play 2 Earn
             </div>
             <div className="text-4xl font-semibold">
-              Safe and growth
+              Grow Safely
             </div>
             <div className="pt-8 text-2md font-normal">
               Pixpel was created to provide all-around services for the P2E community.<br/>
