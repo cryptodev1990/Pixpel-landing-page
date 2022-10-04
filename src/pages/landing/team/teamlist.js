@@ -25,13 +25,13 @@ export const teamList = [
         photo: require("../../../assets/team/Stefan.png"),
     },
     {
-        job: "Blockchain Developer",
+        job: "C.T.O",
         name: "He Jin Yu",
         photo: require("../../../assets/team/Jin.png"),
     },
     {
-        job: "Advisor",
-        name: "Elijah",
-        photo: require("../../../assets/team/Elijah.png"),
-    },
+        job: "Software Engineer",
+        name: "Marko Frei",
+        photo: require("../../../assets/team/Marko.png"),
+    }
 ]

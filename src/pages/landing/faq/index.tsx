@@ -32,10 +32,6 @@ const FaqItem = (props: FapProps) => {
       >
         <div className="flex justify-between items-center text-base2 font-semibold py-2 rounded-lg border-app-blue faqitem-bg px-2">
           {props.question}
-          <FontAwesomeIcon
-            icon={context.faqStatus[props.id] ? faAngleRight : faAngleDown}
-            className="mx-2"
-          />
         </div>
         {context.faqStatus[props.id] && (
           <>
