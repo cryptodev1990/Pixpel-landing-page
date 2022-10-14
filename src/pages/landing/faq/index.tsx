@@ -195,24 +195,23 @@ function Faq() {
                   })}
                 </div>
               </div>
-              <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center text-white w-full lg:w-3/4 hr-gradient">
-                <div className="flex flex-col gap-2 w-full lg:w-1/2">
+              <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center w-full lg:w-3/4 hr-gradient">
+                <div className="flex flex-col gap-2 w-full lg:w-2/5">
                   <div className="text-self-xl font-semibold">
                     Are you a GAMER?
                   </div>
-                  <div className="text-base2 font-normal">
-                    Enter your email and subscribe to get
-                    <br />
-                    the latest news!
+                  <div className="text-base2 font-normal lg:w-5/6 w-full">
+                    Enter your email and subscribe to get the latest news!
                   </div>
                 </div>
-                <div className="flex gap-2 w-full lg:w-1/2">
-                  <button className="subscribe-btn text-white w-48 h-12 mx-auto">
-                    subscribe
+                <div className="flex flex-col lg:flex-row w-full lg:w-3/5 justify-center gap-5">
+                  <div className="gradient-border-bg py-3 sm:px-16 px-4 w-max">Enter your email address</div>
+                  <button className="subscribe-btn w-48 h-12 mx-auto hover:cursor-pointer">
+                    Subscribe
                   </button>
                 </div>
               </div>
-              <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center text-white w-full lg:w-3/4 hr-gradient">
+              <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center w-full lg:w-3/4 hr-gradient">
                 <div className="flex flex-col gap-2 w-full lg:w-1/2">
                   <div className="text-self-xl font-semibold">
                     Are you a DEVELOPER?

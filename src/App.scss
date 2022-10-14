@@ -161,14 +161,6 @@
       background-color: #0095c8;
     }
   }
-  .subscribe-btn {
-    background: linear-gradient(270deg, #2ebd85 0%, #1cb2e5 100%);
-    mix-blend-mode: normal;
-    opacity: 0.72;
-    border-radius: 10px;
-    border-color: #1cb2e5;
-    border-width: 1px;
-  }
 }
 
 .footer-bg {
@@ -236,12 +228,12 @@
   }
 }
 
-
 .hr-gradient {
   position: relative;
   padding: 3em 0;
 
-  &:after, &:before {
+  &:after,
+  &:before {
     top: 0;
     position: absolute;
     left: 50%;
@@ -257,21 +249,22 @@
   }
 }
 
-body {
-  margin: 0;
-  display: grid;
-  place-items: center;
+.gradient-border-bg {
+  background: linear-gradient(90deg, #3e4754 0%, #1f2630 100%) padding-box,
+    linear-gradient(45deg, #8be2ff, #2cc2f5) border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
 }
 
-.module-border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, red, purple);
-  padding: 3px;
-}
-
-.module {
-  color: white;
-  padding: 2rem;
+.gradientbackground-release {
+  background-color: #0dcb80;
+  background-image: linear-gradient(
+    90deg,
+    #0dcb80 0%,
+    #09b471 12%,
+    #057e4f 42%,
+    #053e52 68%,
+    #022835 88%,
+    #01222d 100%
+  );
 }

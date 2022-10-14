@@ -9,6 +9,7 @@ import Tokenomics from "./tokenomics";
 import Roadmap from "./roadmap";
 import Partners from "./partners";
 import Faq from "./faq";
+import Release from "./release";
 import Footer from "./footer";
 
 function Landing() {
@@ -24,8 +25,8 @@ function Landing() {
         <Roadmap />
         <Partners />
         <Faq />
+        <Release /> 
         <Footer />
-
       </main>
     </div>
   );
