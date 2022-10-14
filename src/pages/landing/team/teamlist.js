@@ -5,17 +5,17 @@ export const teamList = [
         photo: require("../../../assets/team/Juan.png"),
     },
     {
-        job: "UI/UX Designer",
-        name: "Danil Ivashchenko",
-        photo: require("../../../assets/team/Danil.png"),
+        job: "Co-Founder & C.T.O",
+        name: "He Jin Yu",
+        photo: require("../../../assets/team/Jin.png"),
     },
     {
-        job: "Marketing Manager",
-        name: "Andres Marquina",
-        photo: require("../../../assets/team/Andres.png"),
+        job: "Co-Founder & Senior Developer",
+        name: "Marko Frei",
+        photo: require("../../../assets/team/Marko.png"),
     },
     {
-        job: "Designer",
+        job: "Graphic Designer",
         name: "Mariana Rojas",
         photo: require("../../../assets/team/Mariana.png"),
     },
@@ -25,13 +25,18 @@ export const teamList = [
         photo: require("../../../assets/team/Stefan.png"),
     },
     {
-        job: "C.T.O",
-        name: "He Jin Yu",
-        photo: require("../../../assets/team/Jin.png"),
+        job: "Marketing Manager",
+        name: "Andres Marquina",
+        photo: require("../../../assets/team/Andres.png"),
     },
     {
-        job: "Software Engineer",
-        name: "Marko Frei",
-        photo: require("../../../assets/team/Marko.png"),
-    }
+        job: "Public Relations",
+        name: "Carlos Graciani",
+        photo: require("../../../assets/team/Carlos.png"),
+    },
+    {
+        job: "Media Relations",
+        name: "Mohammad Ahmad",
+        photo: require("../../../assets/team/Mohammad.png"),
+    },
 ]
