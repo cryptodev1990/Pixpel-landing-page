@@ -163,6 +163,19 @@ function Faq() {
                 <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center text-white w-full lg:w-3/4">
                   <div className="flex flex-col gap-2 w-full lg:w-1/2">
                     <div className="text-self-xl font-semibold">
+                      Are you a GAMER?
+                    </div>
+                    <div className="text-base2 font-normal">
+                      Enter your email and subscribe to get the latest news!
+                    </div>
+                  </div>
+                  <div className="flex gap-2 w-full lg:w-1/2">
+                    <button className="subscribe-btn text-white w-48 h-12 mx-auto" onClick={ () => context.setClickedContact(true) }>Contact Us</button>
+                  </div>
+                </div>
+                <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center text-white w-full lg:w-3/4">
+                  <div className="flex flex-col gap-2 w-full lg:w-1/2">
+                    <div className="text-self-xl font-semibold">
                       Are you a DEVELOPER?
                     </div>
                     <div className="text-base2 font-normal">
