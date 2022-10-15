@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppContext } from "../../../context/AppContext";
 import { ToastContainer, toast } from "react-toastify";
 import { FullscreenLoader } from "../../../components/loader";
@@ -9,7 +7,6 @@ import "../../../App.scss";
 import ContactNFT from "../../../assets/images/contact-image.png";
 import * as emailjs from "emailjs-com";
 import "react-toastify/dist/ReactToastify.css";
-import frame from "../../../assets/background/contact-sub-background.png";
 
 const SERVICE_ID: string = String(process.env.REACT_APP_SERVICE_ID);
 const TEMPLATE_ID: string = String(process.env.REACT_APP_TEMPLATE_ID);
@@ -205,7 +202,11 @@ function Faq() {
                   </div>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full lg:w-3/5 justify-center gap-5">
-                  <div className="gradient-border-bg py-3 sm:px-16 px-4 w-max">Enter your email address</div>
+                  <input
+                    type="email"
+                    className="gradient-border-bg py-3 sm:px-16 px-4 w-max placeholder-white"
+                    placeholder="Enter your email address"
+                  />
                   <button className="subscribe-btn w-48 h-12 mx-auto hover:cursor-pointer">
                     Subscribe
                   </button>
