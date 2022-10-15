@@ -16,7 +16,7 @@ function Team() {
             {
               teamList.map((team, idx) => {
                 return(
-                  <TeamItem key={idx} name={team.name} job={team.job} photo={team.photo} />
+                  <TeamItem key={idx} name={team.name} job={team.job} photo={team.photo} linkedin={team.linkedin} />
                 )
               })
             }

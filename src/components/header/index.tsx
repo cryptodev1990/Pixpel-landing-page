@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <header className="flex absolute w-full justify-between items-center h-24 header-bg top-0 px-8 md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48 z-20">
-        <a href="/">
+        <a href="/" rel="PIXPEL">
           <img src={Logo} alt="logo" className="w-40"/>
         </a>
         <div className="hidden md:flex gap-4 border-1 items-center justify-center border-blue rounded-full px-4 py-2px">

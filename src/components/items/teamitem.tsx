@@ -5,6 +5,7 @@ declare type ServiceItemProps = {
   photo: any;
   job: string;
   name: string;
+  linkedin: string;
 };
 
 function TeamItem(props: ServiceItemProps) {
@@ -14,7 +15,9 @@ function TeamItem(props: ServiceItemProps) {
       <div className="text-5md text-app-blue">{props.job}</div>
       <div className="flex gap-2 text-1xl text-white">
         {props.name}
-        <img src={linkedin} alt="LinkedIn" />
+        <a href={props.linkedin} rel="noreferrer">
+          <img src={linkedin} alt="LinkedIn" />
+        </a>
       </div>
     </div>
   );
