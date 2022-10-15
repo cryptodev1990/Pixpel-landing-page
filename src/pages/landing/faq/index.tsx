@@ -171,7 +171,7 @@ function Faq() {
             </div>
           </div>
         ) : (
-          <div className="faq-bg min-h-screen">
+          <div className="faq-bg w-full h-max">
             <div className="flex flex-col px-4 md:px-8 lg:px-12 xl:px-24 2xl:px-36 3xl:px-48 py-12 items-center justify-center text-white">
               <div className="flex flex-col lg:flex-row gap-8 w-full mb-8">
                 <div className="flex items-center w-full lg:w-2/5">
