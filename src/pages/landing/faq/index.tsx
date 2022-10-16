@@ -20,6 +20,7 @@ declare type FapProps = {
 };
 
 const FaqItem = (props: FapProps) => {
+
   const context = useAppContext();
 
   return (
@@ -171,7 +172,7 @@ function Faq() {
             </div>
           </div>
         ) : (
-          <div className="faq-bg w-full h-max">
+          <div className="faq-bg min-h-screen">
             <div className="flex flex-col px-4 md:px-8 lg:px-12 xl:px-24 2xl:px-36 3xl:px-48 py-12 items-center justify-center text-white">
               <div className="flex flex-col lg:flex-row gap-8 w-full mb-8">
                 <div className="flex items-center w-full lg:w-2/5">
@@ -201,7 +202,7 @@ function Faq() {
                     Enter your email and subscribe to get the latest news!
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row w-full lg:w-3/5 justify-center gap-5">
+                <div className="flex flex-col lg:flex-row w-full justify-center items-center lg:w-3/5 gap-5">
                   <input
                     type="email"
                     className="gradient-border-bg py-3 sm:px-16 px-4 w-max placeholder-white"

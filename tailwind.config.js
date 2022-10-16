@@ -63,8 +63,7 @@ module.exports = {
       '4/5': '80vh',
       'full': '100vh',
     },
-    extend: {
-      
+    extend: {    
       minHeight: {
         '0': '0',
         '1/4': '25vh',
@@ -74,6 +73,7 @@ module.exports = {
         'full': '100vh',
       },
       spacing: {
+        '21': '92px',
         '128': '32rem',
         '320': '80rem'
       },
