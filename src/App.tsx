@@ -1,13 +1,13 @@
-import React from 'react';
 import Router from './routes';
 import AppContextProvider from "./context/AppContext";
+import Layout from './pages/layout';
 import './App.scss';
 
 function App() {
   return (
     <>
       <AppContextProvider>
-        <Router />
+        <Layout />
       </AppContextProvider>
     </>
   );

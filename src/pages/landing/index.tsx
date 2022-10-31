@@ -10,25 +10,20 @@ import Roadmap from "./roadmap";
 import Partners from "./partners";
 import Faq from "./faq";
 import Release from "./release";
-import Footer from "./footer";
 
 function Landing() {
   return (
-    <div className="flex flex-col bg-main h-screen min-h-screen w-full relative">
-      <main className="flex-1 overflow-y-scroll">
-        <Header />
-        <Banner />
-        <Service />
-        <About />
-        <Team />
-        <Tokenomics />
-        <Roadmap />
-        <Partners />
-        <Faq />
-        <Release /> 
-        <Footer />
-      </main>
-    </div>
+    <>
+      <Banner />
+      <Service />
+      <About />
+      <Team />
+      <Tokenomics />
+      <Roadmap />
+      <Partners />
+      <Faq />
+      <Release /> 
+    </>
   );
 };
 

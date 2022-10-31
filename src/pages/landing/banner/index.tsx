@@ -5,12 +5,12 @@ import "../../../App.scss";
 function Banner() {
   return (
     <>
-      <div className="banner-bg w-full min-h-screen">
-        <div className="flex flex-col-reverse lg:flex-row py-36 px-8 md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48 min-h-screen gap-8 lg:gap-16">
-          <div className="grid grid-col-1 lg:w-1/2 w-full text-white content-center">
+      <div className="w-full min-h-screen banner-bg">
+        <div className="flex flex-col-reverse min-h-screen gap-8 px-8 lg:flex-row py-36 md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48 lg:gap-16">
+          <div className="grid content-center w-full text-white grid-col-1 lg:w-1/2">
             <div className="text-4xl font-semibold">Play 2 Earn</div>
             <div className="text-4xl font-semibold">Safe and fun</div>
-            <div className="pt-8 text-2md font-normal">
+            <div className="pt-8 font-normal text-2md">
               Pixpel was created to provide all-around services for the P2E
               community.
               <br />
@@ -25,20 +25,27 @@ function Banner() {
               <a
                 href="https://docsend.com/view/q83qhhu6h66ckvgk"
                 rel="noreferrer"
-                className="flex flex-col bg-app-blue-500 py-2 px-4 rounded-full w-36 h-12 mt-8"
+                className="flex flex-col h-12 px-4 py-2 mt-8 rounded-full bg-app-blue-500 w-36"
               >
-                <div className="items-center my-auto mx-auto">Check Deck</div>
+                <div className="items-center mx-auto my-auto">Check Deck</div>
               </a>
               <a
                 href="https://docsend.com/view/p26a9bvfpqf52ddi"
                 rel="noreferrer"
-                className="flex flex-col bg-app-green py-2 px-4 rounded-full w-36 h-12 mt-8"
+                className="flex flex-col h-12 px-4 py-2 mt-8 rounded-full bg-app-green w-36"
               >
-                <div className="items-center my-auto mx-auto">White Paper</div>
+                <div className="items-center mx-auto my-auto">White Paper</div>
+              </a>
+              <a
+                href="news"
+                rel="noreferrer"
+                className="flex flex-col h-12 px-4 py-2 mt-8 rounded-full bg-app-blue-500 w-36"
+              >
+                <div className="items-center mx-auto my-auto">News</div>
               </a>
             </div>
           </div>
-          <div className="lg:w-1/2 w-full">
+          <div className="w-full lg:w-1/2">
             <img src={Hero} className="w-full mx-auto" alt="hero" />
           </div>
         </div>
