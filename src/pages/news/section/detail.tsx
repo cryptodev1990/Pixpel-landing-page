@@ -14,11 +14,11 @@ declare type News = {
 
 function Section(props: News) {
   return (
-    <div className="relative flex flex-col-reverse w-full mt-16 border-2 border-white cursor-pointer lg:static lg:flex-row">
-      <div className="pb-20 px-11 lg:p-0 lg:w-1/2">
-        <img src={props.blog} alt="blog" className="min-h-[100%]"/>
+    <div className="relative flex flex-col-reverse w-full mt-16 border-2 border-white cursor-pointer">
+      <div className="pb-20 px-11">
+        <img src={props.blog} alt="blog" className="min-h-[100%] w-full"/>
       </div>
-      <div className="lg:relative lg:w-1/2">
+      <div>
         <div className="p-11">
           <div className="flex">
             <img src={User} alt="user" />
@@ -37,7 +37,7 @@ function Section(props: News) {
             {props.content}
           </div>
         </div>
-        <div className="absolute w-full text-gray-400 px-11 p bottom-10 lg:block">
+        <div className="absolute w-full text-gray-400 px-11 p bottom-10">
           <hr />
           <div className="mt-3 text-sm">
             <div className="flex float-right">

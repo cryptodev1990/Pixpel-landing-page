@@ -1,9 +1,11 @@
+import { useParams } from "react-router-dom";
 import Search from "../../assets/icons/search.svg";
-import Section from "./section";
+import Section from "./section/detail";
 import { newsList } from "./newslist";
 
-function News() {
-  
+function NewsDetail() {
+  let { id } = useParams();
+  let news = newsList[parseInt(id||"0") - 1];
   const animateSearch = () => {
     let searchInput = document.getElementById("search");
     if (!searchInput) return;
@@ -11,9 +13,8 @@ function News() {
       searchInput.style.width = "150px";
     else searchInput.style.width = "0px";
   };
-  
   return (
-    <div className="min-h-screen px-12 text-white md:px-24 xl:px-60 2xl:px-80 news-bg py-52">
+    <div className="min-h-screen text-white px-96 news-bg py-52">
       <div className="text-4xl font-semibold text-center">News Updates</div>
       <div className="flex items-center gap-8 pt-32 text-lg cursor-pointer ">
         <a href="/" className="flex flex-col hover:text-app-green">
@@ -35,20 +36,17 @@ function News() {
           </div>
         </div>
       </div>
-      {newsList.map((news, index) => (
-        <Section
-          key={index}
-          blog={news.blog}
-          date={news.date}
-          blogger={news.blogger}
-          title={news.title}
-          content={news.content}
-          views={news.views}
-          popularity={news.popularity}
-        />
-      ))}
+      <Section
+        blog={news.blog}
+        date={news.date}
+        blogger={news.blogger}
+        title={news.title}
+        content={news.content}
+        views={news.views}
+        popularity={news.popularity}
+      />
     </div>
   );
 }
 
-export default News;
+export default NewsDetail;
