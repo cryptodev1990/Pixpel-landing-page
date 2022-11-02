@@ -37,6 +37,11 @@
   background-position: center;
 }
 
+.news-bg {
+  background-image: url("./assets/background/news-background.png");
+  background-size: cover;
+}
+
 .roadmap-bg {
   background-image: url("./assets/background/roadmap-background.png");
   background-repeat: no-repeat;

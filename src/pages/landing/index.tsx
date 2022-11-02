@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "../../components/header";
 import Banner from "./banner";
 import Service from "./service";
 import About from "./about";

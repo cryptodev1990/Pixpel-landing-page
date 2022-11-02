@@ -9,7 +9,7 @@ function Landing() {
     <div className="relative flex flex-col w-full h-screen min-h-screen bg-main">
       <main className="flex-1 overflow-y-scroll">
         <Header />
-            <Router />
+        <Router />
         <Footer />
       </main>
     </div>
