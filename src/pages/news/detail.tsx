@@ -5,7 +5,7 @@ import { newsList } from "./newslist";
 
 function NewsDetail() {
   let { id } = useParams();
-  let news = newsList[parseInt(id||"0") - 1];
+  let news = newsList[parseInt(id || "0") - 1];
   const animateSearch = () => {
     let searchInput = document.getElementById("search");
     if (!searchInput) return;
@@ -14,7 +14,7 @@ function NewsDetail() {
     else searchInput.style.width = "0px";
   };
   return (
-    <div className="min-h-screen text-white px-96 news-bg py-52">
+    <div className="min-h-screen px-12 text-white md:px-24 lg:px-44 xl:px-60 2xl:px-80 news-bg py-52">
       <div className="text-4xl font-semibold text-center">News Updates</div>
       <div className="flex items-center gap-8 pt-32 text-lg cursor-pointer ">
         <a href="/" className="flex flex-col hover:text-app-green">
@@ -26,7 +26,7 @@ function NewsDetail() {
         <a href="/" className="flex flex-col hover:text-app-green">
           Tournaments
         </a>
-        <div className="flex border-white rounded-full cursor-pointer border-1 bg-sky-500">
+        <div className="hidden border-white rounded-full cursor-pointer lg:flex border-1 bg-sky-500">
           <input
             id="search"
             className="flex flex-col w-0 py-1 text-black duration-1000 rounded-l-full focus:px-3 bg-slate-200 focus:outline-none blur:px-0 transition-[width]"

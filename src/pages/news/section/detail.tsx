@@ -14,7 +14,7 @@ declare type News = {
 
 function Section(props: News) {
   return (
-    <div className="relative flex flex-col-reverse w-full mt-16 border-2 border-white cursor-pointer">
+    <div className="relative flex flex-col-reverse w-full mt-16 border-2 border-white">
       <div className="pb-20 px-11">
         <img src={props.blog} alt="blog" className="min-h-[100%] w-full"/>
       </div>

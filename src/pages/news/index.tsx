@@ -25,7 +25,7 @@ function News() {
         <a href="/" className="flex flex-col hover:text-app-green">
           Tournaments
         </a>
-        <div className="flex border-white rounded-full cursor-pointer border-1 bg-sky-500">
+        <div className="hidden border-white rounded-full cursor-pointer border-1 bg-sky-500 lg:flex">
           <input
             id="search"
             className="flex flex-col w-0 py-1 text-black duration-1000 rounded-l-full focus:px-3 bg-slate-200 focus:outline-none blur:px-0 transition-[width]"
@@ -38,6 +38,7 @@ function News() {
       {newsList.map((news, index) => (
         <Section
           key={index}
+          index={index}
           blog={news.blog}
           date={news.date}
           blogger={news.blogger}
