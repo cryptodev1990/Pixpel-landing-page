@@ -7,11 +7,11 @@ function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <header className="flex absolute w-full justify-between items-center h-24 header-bg top-0 px-8 md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48 z-20">
+      <header className="absolute top-0 z-20 flex items-center justify-between w-full h-24 px-8 header-bg md:px-12 lg:px-18 xl:px-24 2xl:px-36 3xl:px-48">
         <a href="/" rel="PIXPEL">
           <img src={Logo} alt="logo" className="w-40"/>
         </a>
-        <div className="hidden md:flex gap-4 border-1 items-center justify-center border-blue rounded-full px-4 py-2px">
+        <div className="items-center justify-center hidden gap-4 px-4 rounded-full md:flex border-1 border-blue py-2px">
           <div className="items-center text-white cursor-pointer hover:text-app-green">
             <a href="/">
               Home
@@ -54,25 +54,27 @@ function Header() {
           </div>
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">
             <li>
-              <button className="
-                flex justify-between items-center text-sm2 w-full text-app-green"
+              <button className="flex items-center justify-between w-full text-sm2 text-app-green"
                 onClick={() => { setNavbarOpen(!navbarOpen); }}
               >
                 Menu 
-                <svg className="mt-1 ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 mt-1 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd">
                   </path>
                 </svg>
               </button>
               {
                 navbarOpen && (
-                  <div className="absolute flex flex-row-reverse justify-end bg-white w-32 mt-1 rounded-b-xl">
+                  <div className="absolute flex flex-row-reverse justify-end w-32 mt-1 bg-white rounded-b-xl">
                     <ul>
                       <li onClick={ () => setNavbarOpen(!navbarOpen) }>
-                        <a href="https://docsend.com/view/p26a9bvfpqf52ddi" target="_blank" className="block py-2 px-2 hover:text-app-green" rel="noreferrer">White Paper</a>
+                        <a href="https://docsend.com/view/p26a9bvfpqf52ddi" target="_blank" className="block px-2 py-2 hover:text-app-green" rel="noreferrer">White Paper</a>
                       </li>
                       <li onClick={ () => setNavbarOpen(!navbarOpen) }>
-                        <a href="https://docsend.com/view/q83qhhu6h66ckvgk" target="_blank" className="block py-2 px-2 hover:text-app-green" rel="noreferrer">Check Deck</a>
+                        <a href="https://docsend.com/view/q83qhhu6h66ckvgk" target="_blank" className="block px-2 py-2 hover:text-app-green" rel="noreferrer">Check Deck</a>
+                      </li>
+                      <li onClick={ () => setNavbarOpen(!navbarOpen) }>
+                        <a href="/news" target="_blank" className="block px-2 py-2 hover:text-app-green" rel="noreferrer">News</a>
                       </li>
                     </ul>
                   </div>
